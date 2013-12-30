@@ -6,7 +6,10 @@ class SpecialsController < ApplicationController
     if Special.where(name: verify_name).exists?
       session[:special] = Special.where(name: verify_name).first.name
       redirect_to congrats_path
+    else
+      redirect_to home_path
     end
+
   end
 
   def congratulate
