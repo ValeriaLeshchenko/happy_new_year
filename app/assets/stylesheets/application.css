@@ -14,8 +14,8 @@
  *= require_tree .
  */
 
-html, .main {
-    background-color: #FAECEC;
+body {
+    background-color: #fbd9b6;
 }
 
 img {
@@ -45,7 +45,6 @@ body, html {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
-    background: #9fd9e6;
     text-align: left;
 }
 
