@@ -57,12 +57,8 @@ ul [class*="word"] {
     margin-right: 10px;
 }
 
-ul [class*="word"]:last-child
-
-;
-{
-    margin-right: 0
-;
+ul [class*="word"]:last-child {
+    margin-right: 0;
 }
 .fancy_title [class*="char"] {
     margin-right: 5px;
