@@ -14,6 +14,25 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require jquery.lettering-0.6.1.min.js
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+if ($('.congrats').length) {
+    $('#pic').slideDown( "slow", function() {
+    // Animation complete.
+    });
+    $('header').slideUp( "slow", function() {
+    // Animation complete.
+    });
+}
+$('#wish').click(function(e) {
+
+    e.preventDefault();
+    $('#wishes').show( "slow", function() {
+
+    });//.delay( 800 ).fadeOut( 4000 );
+});
+
+$(".fancy_title").lettering();
+

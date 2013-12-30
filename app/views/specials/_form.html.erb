@@ -1,0 +1,7 @@
+<%= form_for :special, url: specials_verify_path do |f| %>
+    <div class="large-8 small-9 columns"><%= f.text_field :name, placeholder: "Введи свое имя" %><!--<input type="text" placeholder="Enter your name">-->
+    </div>
+    <div class="large-4 small-3 columns">
+      <%= f.submit "Это я", class: "alert button expand" %><!--<a href="#" class="alert button expand">Confirm</a>-->
+    </div>
+<% end %>

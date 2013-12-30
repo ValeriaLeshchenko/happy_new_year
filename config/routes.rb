@@ -1,10 +1,12 @@
 HappyNewYear::Application.routes.draw do
+  post "specials/verify"
+  get "pages/main"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
+  root 'pages#main', as: 'home'
+  get "/happy_new_year", to: "specials#congratulate", as: "congrats"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
